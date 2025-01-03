@@ -15,5 +15,16 @@ class UserTest < ActiveSupport::TestCase
 
     @user.email = "ollie@example.com"
     assert @user.valid?
+
+    @user.email = " ayush@example.com"
+    assert @user.valid?
+  end
+
+  test "name and email stripped normalized before saving" do
+    @user = User.new(name: " ollie", email: "ollie@example.com")
+    assert @user.valid?
+
+    @user = User.new(name: "ollie", email: " Ollie@example.com")
+    assert @user.valid?
   end
 end
