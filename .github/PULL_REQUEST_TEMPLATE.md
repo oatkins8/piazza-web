@@ -2,14 +2,8 @@
 
 ## Background context
 
+The Rails and Hotwire codex, page 
+
 ## Learning/resources 
 
 ## Screenshots
-
----
-
-## Migrations
-
-## Additional deployment instructions
-
-## Additional ENV Vars
