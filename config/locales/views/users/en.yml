@@ -3,4 +3,5 @@ en:
     new:
       title: Sign up for Piazza
       sign_up: Sign up!
-    create: "Welcome to Piazza %{name}"
+    create: 
+      welcome: "Welcome to Piazza, %{name}"
