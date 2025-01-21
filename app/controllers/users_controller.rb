@@ -15,7 +15,6 @@ class UsersController < ApplicationController
         flash: {success: t(".welcome", name: @user.name) }
     else
       render :new, status: :unprocessable_entity
-
     end
   end
 
