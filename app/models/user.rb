@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :email, 
   format: { with: URI::MailTo::EMAIL_REGEXP },
   uniqueness: { case_sensitive: false }
-  validates :password_digest, presence: true, length: { minimum: 8 }
+  validates :password, presence: true, length: { minimum: 8 }
 
 
   normalizes :name, with: -> (name) { name.strip }
