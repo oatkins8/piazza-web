@@ -5,6 +5,7 @@
     <h1 class="title has-text-centered">
       <%= t(".title") %>
     </h1>
+    <!--DEPRECATION WARNING: Passing nil to the :model argument is deprecated and will raise in Rails 8.0 (called from _app_views_sessions_new_html_erb__1614049508277058158_21400 at /Users/oliveratkins/code/piazza-web/app/views/sessions/new.html.erb:8)-->
     <%= form_with(
           model: @session,
           url: sign_in_path,

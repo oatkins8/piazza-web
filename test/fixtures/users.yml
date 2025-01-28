@@ -2,11 +2,11 @@
 
 charlie:
   name: Charlie
-  email: charliey@example.com
+  email: charlie@example.com
   password_digest: <%= BCrypt::Password.create("password") %>
 
 mac:
-  name: mac
+  name: Mac
   email: mac@example.com
   password_digest: <%= BCrypt::Password.create("password") %>
 
