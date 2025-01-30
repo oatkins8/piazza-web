@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
     )
 
     if @session
-      # TODO: store the details in a cookie
       flash[:success] = t(".successful")
       redirect_to root_path, status: :see_other
     else
