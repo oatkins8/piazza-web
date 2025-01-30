@@ -1,0 +1,8 @@
+en: 
+  sessions:
+    new:
+      title: Sign in to Piazza
+      sign_in: Sign in
+    create:
+      successful: "Successfully signed in"
+      unsuccessful: "Incorrect email or password, please try again"
