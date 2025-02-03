@@ -15,6 +15,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
       }
     end
 
+    assert_not_empty cookies[:session]
     assert_redirected_to root_path
     assert_equal(flash[:success], I18n.t(".sessions.create.successful"))
   end

@@ -15,6 +15,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
       }
 
       assert_redirected_to root_path
+      assert_not_empty cookies[:session]
       follow_redirect!
 
       assert_select(

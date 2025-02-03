@@ -10,6 +10,8 @@ class SessionsController < ApplicationController
     )
 
     if @session
+      binding.irb
+      sign_in(@session)
       flash[:success] = t(".successful")
       redirect_to root_path, status: :see_other
     else

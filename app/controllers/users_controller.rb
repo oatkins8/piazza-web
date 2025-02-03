@@ -8,7 +8,8 @@ class UsersController < ApplicationController
 
     if @user.save
       @organisation = Organisation.create(members: [@user])
-      #TODO: Log in the user
+      @session = @user.sessions.create
+      sign_in(@session)
 
       redirect_to root_path,
         status: :see_other,
