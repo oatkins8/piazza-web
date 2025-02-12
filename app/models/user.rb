@@ -9,6 +9,12 @@ class User < ApplicationRecord
     user.sessions.create if user.present?
   end
 
+  def authenticate_session(session_id, token)
+    sessions.find(session_id).authenticate_token(token)
+  rescue ActiveRecord::RecordNotFound
+    nil
+  end
+
   has_secure_password
 
   validates :name, presence: true
